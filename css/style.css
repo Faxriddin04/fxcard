@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+*
+{
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.continer 
+{
+    max-width: 1350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 75px;
+    padding-right: 75px;
+   
+}
+.site-header 
+{
+    background: #fff;
+}
+.site-header .site-content 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+}
+.site-header-link
+{ 
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+color: #111517;
+text-decoration: none;
+}
+.site-header-mode
+{
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+color: #111517;
+}
+.site-header-mode::before
+{
+    content: '';
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/Path.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    cursor: pointer;
+}
+.main
+{
+    margin-top: 24px;
+    padding-bottom: 24px;
+    background-color: #F2F2F2;
+    
+}
+.site-form
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-search
+{
+    width: 480px;
+    height: 56px;
+    padding-left: 74px;
+    border: none;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    background-size: 15px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+    border-radius: 5px;
+    margin-top: 48px;
+    cursor: pointer;
+    /* padding: 18px 270px 18px 74px; */
+}
+/* .site-search::before
+{
+    content: '';
+    position: relative;
+    right: 10px;
+    top: 2px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    cursor: pointer;
+} */
+
+
+.site-select 
+{
+    border: none;
+    margin-top: 48px;
+    padding: 18px 77px 18px 24px;
+    filter: drop-shadow(10px 10px 10px #f2f2f2);
+    cursor: pointer;
+
+}
+.site-box 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    padding-bottom: 3opx;
+}
+.card-1 {
+    /* position: relative;
+    bottom: 30px; */
+    max-width: 267px;
+    width: 100%;
+    height: 336px;
+    display: inline-block;
+    margin-top: 48px;
+    background-color: #fff;
+}
+.card
+{
+    
+    color: #111517;
+    text-decoration: none;
+}
+.card-img 
+{
+    max-width: 267px;
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin: 0;
+}
+.site-h3 {
+    margin: 24px 0px 10px 25px;
+}
+.site-text
+{
+    margin-left: 24px;
+    margin-top: 8px;
+}
+/* .text
+{
+    margin-bottom: 48px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:860px) {
+    .site-form {
+        display: flex;
+        flex-direction: column;
+    align-items: flex-start;
+    }
+    .site-search {
+        max-width: 380px;
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:510px) {
+    .continer 
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .site-header-link 
+    {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:375px) {
+ 
+    .site-header .site-content 
+    {
+        padding-top: 10px;
+    }
+    .site-header-link
+    {
+        font-size: 14px;
+    }
+    .site-header-mode
+    {
+        font-size: 12px;
+    }
+    .site-header-mode::before
+    {
+        width: 12px;
+        height: 11px;
+    }
+    .site-search 
+    {
+        margin-top: 10px;
+    }
+    .site-select 
+    {
+        margin-top: 20px;
+    }
+    .site-box 
+    {
+        gap: 30px;
+    }
+    .card-1 
+    {
+        max-width: 220px;
+        width: 100%;
+        height: 336px;
+        margin-top: 10px;
+    }
+    .card-img {
+      margin-top: -15px;
+      
+    }
+}
