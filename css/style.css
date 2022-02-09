@@ -126,7 +126,7 @@ color: #111517;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
     justify-items: center;
-    gap: 50px;
+    gap: 30px;
     padding-bottom: 3opx;
 }
 .card-1 {
